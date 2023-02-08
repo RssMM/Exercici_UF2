@@ -3,7 +3,7 @@ package Model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="Model.Cliente")
+@Table(name="Cliente")
 public class Cliente {
 
     @Id
@@ -17,9 +17,21 @@ public class Cliente {
     private boolean vip;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride( name = "direccion", column = @Column(name = "direccion")),
+            @AttributeOverride( name = "ciudad", column = @Column(name = "ciudad")),
+            @AttributeOverride( name = "provincia", column = @Column(name = "provincia")),
+            @AttributeOverride( name = "codigoPostal", column = @Column(name = "codigoPostal"))
+    })
     private Direccion direccioEnvio;
 
     @Embedded
+    @AttributeOverrides({
+            @AttributeOverride( name = "direccion", column = @Column(name = "direccion1")),
+            @AttributeOverride( name = "ciudad", column = @Column(name = "ciudad1")),
+            @AttributeOverride( name = "provincia", column = @Column(name = "provincia1")),
+            @AttributeOverride( name = "codigoPostal", column = @Column(name = "codigoPostal1"))
+    })
     private Direccion direccionFacturacion;
 
     public Cliente() {

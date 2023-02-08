@@ -9,11 +9,11 @@
         <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
 
         <!-- Conexión. Añadir ?createDatabaseIfNotExist=true para crear la BBDD  -->
-        <property name="connection.url">jdbc:mysql://localhost:3306/clients</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/Model</property>
 
         <!-- Usuario y password de la BBDD -->
         <property name="connection.username">root</property>
-        <property name="connection.password">root</property>
+        <property name="connection.password"></property>
 
         <!--  dialecto dentro del conector. Importante para claves ajenas-->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
