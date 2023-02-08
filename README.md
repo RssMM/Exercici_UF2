@@ -7,7 +7,7 @@ primer cosa es conectar la aplicacion con la base de datos
 he usado el @attributeoverride para  sobrescribir la configuración de mapeo de atributos específicos  de la entidad Direccion y asi me permite personalizar la forma en que se almacenan los datos de la entidad en la base de datos.
 
 
-# console
+# Mysql Shell Console
 
 
 ![plot](console_screenshot.jpg)
